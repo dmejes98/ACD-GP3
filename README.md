@@ -12,4 +12,4 @@ Instrucciones
 3. Correr Descripción de Sentimientos
 4. En la carpeta Outliers, correr modelo de Outliers
 5. Correr Forecasting Models
-6. Correr Model Selection Training Set
+6. En la carpeta Outliers, correr Model Selection Training Set
