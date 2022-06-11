@@ -3,8 +3,9 @@ from sklearn.covariance import LedoitWolf as lw
 import numpy as np
 
 def outliers (df, lam, cv):
-  if cv: cov = df.cov() + lam* np.eye(2)
+  if cv: cov = df.cov()
   else: cov = list(lw().fit(df).covariance_) + lam* np.eye(2)
+  # else: cov = list(np.cov(df))
   
   inv_cov = np.linalg.pinv(cov)
   print('Condición ', np.linalg.cond(cov))
